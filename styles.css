@@ -1,0 +1,567 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+.project {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+.diagonal-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 670px;
+  overflow: hidden;
+}
+
+.diagonal-div::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 110%;
+  height: 250%;
+  box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.2); /* Adds shadow to the diagonal */
+  transform: skewY(-14deg); /* Skew the pseudo-element to create a diagonal */
+  transform-origin: top left; /* Set the transform origin */
+  overflow: visible;
+  background-color: #3085a3;
+}
+
+.header-content-container {
+  position: relative;
+  height: 559px;
+  padding-top: 78px;
+  margin: 0 78px 30px 78px;
+}
+
+.header-image-container {
+  float: inline-start;
+  position: relative;
+  margin-right: 18px;
+}
+
+.header-image-container,
+.header-image {
+  width: 550px;
+  height: 559px;
+}
+
+.header-image-container,
+.about-me-title,
+.about-me-text,
+.social-nav {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-image {
+  object-fit: fill;
+  display: block;
+  filter: brightness(0.8);
+}
+
+h1 {
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  transform: translateX(45px);
+  box-sizing: border-box;
+  font-size: 75px;
+  color: white;
+}
+
+h1,
+.screenshot,
+h3 {
+  font-weight: 600;
+  font-family: "Source Serif 4", serif;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: 500;
+  font-family: "Source Serif 4", serif;
+}
+
+p {
+  color: #555555;
+}
+
+.about-me-title,
+.about-me-text,
+.social-nav {
+  min-width: 100px;
+  max-width: 1300px;
+}
+
+.about-me-title {
+  padding: 28px 30px 18px 40px;
+  margin: 0;
+  margin-top: 67px;
+}
+
+.about-me-text {
+  max-height: 470px;
+  padding: 0 30px 0 40px;
+  margin: 0;
+  line-height: 28px;
+  font-size: 17px;
+}
+
+.social-nav {
+  padding: 79px 30px 23px 40px;
+  text-align: end;
+}
+
+.about-me-title,
+.about-me-text,
+.social-nav {
+  margin-left: 50px;
+  background-color: white;
+}
+
+.social-nav a,
+.footer-nav a {
+  margin-right: 15px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.social-nav a:hover,
+.footer-nav a:hover {
+  color: #ddd;
+}
+
+.social-nav i {
+  font-size: 30px; /* Adjust icon size */
+}
+
+.my-work-title {
+  margin: 164px 0 4px 78px;
+}
+
+.projects-container {
+  max-width: 1433px;
+  margin: 3px 78px 0 78px;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.projects-container,
+.project-blurb {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 30%;
+  height: auto;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 45px;
+}
+
+.one {
+  background-color: #912924;
+}
+
+.two {
+  background-color: #7b75c4;
+}
+
+.three {
+  background-color: #698e54;
+}
+
+.four {
+  background-color: #b768b0;
+}
+
+.five {
+  background-color: #ce924a;
+}
+
+.six {
+  background-color: #62a0cd;
+}
+
+.screenshot {
+  padding: 73px 78px 78px 78px;
+  flex-shrink: 1;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+.project-blurb {
+  padding-bottom: 95px;
+  flex-shrink: 1;
+}
+
+h3 {
+  margin: 20px 20px 15px 30px;
+  font-size: 25px;
+}
+
+.project-nav {
+  padding-bottom: 15px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.project-nav a {
+  margin-right: 15px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.project-nav i {
+  font-size: 26px; /* Adjust icon size */
+}
+
+.project-description {
+  margin: 0 40px 0 30px;
+  font-size: 16px;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  margin-top: 150px;
+  background-color: #3085a3;
+}
+
+.contact-content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-me {
+  padding: 60px 10px 25px 0;
+  margin: 0;
+  margin-left: 78px;
+  color: white;
+}
+
+.contact-container,
+.footer-nav {
+  margin-left: 78px;
+}
+
+.contact-container * {
+  margin-right: 100px;
+  font-size: 17px;
+  color: white;
+}
+
+address {
+  font-style: normal;
+}
+
+.fa-solid {
+  margin-right: 13px;
+}
+
+.address-phone,
+.footer-nav {
+  margin-top: 35px;
+}
+
+.email {
+  /* padding: 0; */
+  margin-top: 20px;
+}
+
+.footer-nav {
+  background-color: #3085a3;
+  padding-bottom: 45px;
+}
+
+.footer-nav i {
+  font-size: 35px; /* Adjust icon size */
+}
+
+.footer-image-container,
+.footer-image {
+  width: 783px;
+  height: 525px;
+}
+
+.footer-image-container {
+  padding: 40px 78px 40px 0;
+  overflow: hidden;
+}
+
+/* tablet */
+@media (max-width: 1000px) and (min-width: 502px) {
+  .header-content-container {
+    min-height: 559px;
+    padding-top: 60px;
+    margin: 0 120px 20px 60px;
+  }
+
+  h1 {
+    width: 800px;
+    top: -55px;
+    right: -70px;
+    padding-left: 300px;
+    font-size: 65px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .about-me-text,
+  .contact-container * {
+    font-size: 16px;
+  }
+
+  .header-image-container,
+  .header-image {
+    width: 400px;
+    height: 407px;
+  }
+
+  .social-nav {
+    display: none;
+  }
+
+  .about-me-title,
+  .about-me-text {
+    width: 600px;
+  }
+
+  .about-me-title {
+    padding-top: 60px;
+    margin-top: 90px;
+    text-align: center;
+  }
+
+  .about-me-text {
+    padding-bottom: 65px;
+  }
+
+  .my-work-title {
+    margin: 55px 0 0 100px;
+  }
+
+  .projects-container {
+    margin-bottom: 150px;
+    gap: 10px;
+    justify-content: space-evenly;
+  }
+
+  .project {
+    width: 45%;
+    height: auto;
+  }
+
+  .project-description {
+    font-size: 14px;
+  }
+
+  .contact-content-container {
+    padding: 35px 0 35px 0;
+    justify-content: space-between;
+  }
+
+  .contact-me,
+  .contact-container,
+  .footer-nav {
+    margin-left: 30px;
+  }
+
+  .address-phone,
+  .email {
+    margin-right: 50px;
+  }
+
+  .footer-image-container,
+  .footer-image {
+    width: 600px;
+    height: 402px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 502px) {
+  body,
+  header {
+    max-width: 500px;
+  }
+
+  .diagonal-div {
+    height: 400px;
+  }
+
+  .header-content-container {
+    position: relative;
+    width: 500px;
+    height: 1300px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-image-container,
+  .header-image {
+    width: 500px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    transform: scale(95%);
+    transform-origin: center;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+
+  .header-image {
+    object-fit: contain;
+  }
+
+  h1 {
+    width: 400px;
+    height: 250px;
+    top: 245px;
+    left: -10px;
+    padding: 0;
+    margin: 0;
+    font-size: 120px;
+    line-height: 125px;
+    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.4);
+  }
+
+  h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .about-me-title {
+    width: 500px;
+    padding: 0;
+    padding-bottom: 15px;
+    margin: 0;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+
+  .about-me-text {
+    width: 450px;
+    max-height: 1000px;
+    padding: 0 20px 0 25px;
+    margin: 0;
+    margin-bottom: 28px;
+    font-size: 26px;
+    line-height: 45px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+
+  .social-nav {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: block;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+
+  .social-nav i {
+    font-size: 60px;
+  }
+
+  .my-work-title {
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+  .projects-container {
+    max-width: 1433px;
+    margin: 3px 45px 20px 45px;
+    gap: 50px;
+    justify-content: space-between;
+  }
+
+  .projects-container,
+  .project-blurb {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 45px;
+  }
+
+  .screenshot {
+    padding: 73px 73px 75px 73px;
+    font-size: 65px;
+  }
+
+  h3 {
+    font-size: 35px;
+  }
+
+  .project-nav {
+    margin-top: 30px;
+  }
+
+  .project-description {
+    font-size: 20px;
+  }
+
+  .contact-content-container {
+    flex-direction: column;
+  }
+
+  .contact-me,
+  .contact-container,
+  .footer-nav {
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact-note,
+  .address-phone,
+  .email {
+    padding-left: 35px;
+    font-size: 23px;
+  }
+
+  .footer-nav {
+    padding: 40px 0 100px 0;
+    text-align: center;
+  }
+
+  .footer-nav a {
+    margin-right: 40px;
+  }
+
+  .footer-nav i {
+    font-size: 60px;
+  }
+
+  .footer-image-container,
+  .footer-image {
+    width: 500px;
+    height: 335px;
+    padding: 0px;
+  }
+}
