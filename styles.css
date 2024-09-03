@@ -277,6 +277,10 @@ address {
   margin-right: 13px;
 }
 
+span {
+  display: block;
+}
+
 .address-phone,
 .footer-nav {
   margin-top: 35px;
