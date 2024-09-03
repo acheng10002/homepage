@@ -414,18 +414,32 @@ address {
     position: relative;
     width: 500px;
     height: 1300px;
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
     display: flex;
     flex-direction: column;
+  }
+
+  .header-content-container,
+  .header-image-container,
+  .header-image,
+  h1,
+  h2,
+  .about-me-title,
+  .social-nav,
+  .contact-me,
+  .contact-container,
+  .footer-nav {
+    padding: 0;
+    margin: 0;
   }
 
   .header-image-container,
   .header-image {
     width: 500px;
     height: auto;
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
     transform: scale(95%);
     transform-origin: center;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
@@ -440,25 +454,19 @@ address {
     height: 250px;
     top: 245px;
     left: -10px;
-    padding: 0;
-    margin: 0;
     font-size: 120px;
     line-height: 125px;
     text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.4);
   }
 
   h2 {
-    padding: 0;
-    margin: 0;
     font-size: 60px;
     text-align: center;
   }
 
   .about-me-title {
     width: 500px;
-    padding: 0;
     padding-bottom: 15px;
-    margin: 0;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   }
 
@@ -474,8 +482,6 @@ address {
   }
 
   .social-nav {
-    padding: 0;
-    margin: 0;
     text-align: center;
     display: block;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
@@ -531,18 +537,28 @@ address {
     flex-direction: column;
   }
 
-  .contact-me,
-  .contact-container,
-  .footer-nav {
-    padding: 0;
-    margin: 0;
+  .contact-me {
+    padding-top: 30px;
   }
 
   .contact-note,
   .address-phone,
   .email {
-    padding-left: 35px;
-    font-size: 23px;
+    padding-left: 25px;
+    margin-right: 0;
+  }
+
+  .contact-note {
+    font-size: 29px;
+  }
+
+  .address-phone {
+    margin-top: 33px;
+  }
+
+  .address-phone,
+  .email {
+    font-size: 22px;
   }
 
   .footer-nav {
